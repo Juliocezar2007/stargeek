@@ -1,0 +1,262 @@
+
+
+.login{
+    background-image: url(../img/fundo2.jpg);
+}
+
+.h2-login{
+    color: white;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.pagina{
+    text-align: center;
+}
+.cadastro2{
+    text-align: center;
+    margin: 6%;
+    color: white;
+}
+.imgcadastro{
+    height: 50px;
+}
+.alinhar{
+    text-align: center;
+}
+.principal1{
+    height: 45px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.cabecalho{
+    background-color: rgb(13, 160, 186);
+    display: flex;
+    padding: 20px;
+    box-shadow: 0px 0px 15px black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-cabecalho{
+    width: 80px;
+    margin-right: 30px;
+}
+
+.botao-cabecalho{
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+}
+
+.botao-cabecalho:hover{
+    color: rgb(9, 113, 3);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.botao-encontre-uma-loja{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.botao-encontre-uma-loja:hover{
+    color: rgb(9, 113, 3);
+}
+
+.botao-entrar{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.botao-entrar:hover{
+    background-color: black;
+    color: white;
+}
+
+.botao-participe-agora{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.botao-participe-agora:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.cabecalho2{
+    display: flex;
+    align-items: center;
+}
+.principal2{
+    background-color: rgb(11, 63, 88);
+}
+
+.img-sabor:hover{
+    width: 500px;
+    height: 300px;
+    transition: 500ms;
+
+}
+.img-sabor{
+    background-color: rgb(234, 233, 233);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px black;
+    width: 250px;
+    height: 230px;
+    margin: 20px;
+}
+.p-filmes{
+    text-align: center;
+    color: white;
+}
+.filmes::-webkit-scrollbar{
+    display: none;
+}
+.filmes{
+    justify-content:space-between;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.fundo{
+    background-image: url(../img/fundo2.jpg);
+}
+.index1{
+    width: 150px;
+}
+.index2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgindex{
+    width: 350px;
+    display: flex;
+}
+.index{
+    background-color: rgb(13, 160, 186);
+}
+.texto1{
+    text-align: left;
+    font-size: 25px;
+    margin: auto;
+    padding: 20px;
+}
+.img-index2{
+    width:500px ;
+    border-radius: 10px;
+    border: solid rgb(104, 123, 126);
+}
+.img-index{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color:rgba(157, 121, 121, 0.382) ;
+    color: rgb(0, 0, 0);
+    border: solid black;
+}
+input{
+    width: 300px;
+    height: 35px;
+    border-radius: 50px;
+}
+.botao{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.botao:hover{
+    background: rgb(0,1,255);
+    background: linear-gradient(0deg, rgba(0,1,255,1) 0%, rgba(0,14,255,0.03974089635854339) 51%, rgba(3,0,255,1) 100%);
+    color: rgb(255, 255, 255);
+}
+
+.cris{
+    text-align: end;
+}
+
+#password{
+    padding-left: 10px;
+}
+
+#username{
+    padding-left: 10px;
+}
+
+.ffj{
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+@media (max-width: 600px)
+{
+    .img-index{
+       flex-wrap: wrap;
+       flex-direction: column;
+    }
+    .img-index2{
+        width: 80%;
+        min-width: 50%;
+    }
+    .cabecalho{
+        flex-direction: column;
+    }
+    .menu{
+        flex-wrap: wrap;
+    }
+    .cabecalho2{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 487px)
+{
+    .filmes{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 487px)
+{
+    .pagina{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 487px)
+{.login{
+    flex-wrap: wrap;
+}
+}

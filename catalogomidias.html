@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="principal2">
+        <header class="cabecalho">
+            <nav class="menu">
+                <img class="principal1" src="img/Vector 1.png" alt="">
+                <a href="#" class="botao-cabecalho"><b>Filmes</b></a>
+                <a href="#" class="botao-cabecalho"><b>Series</b></a>
+                <a href="#" class="botao-cabecalho"><b>Animes</b></a>
+                <a href="#" class="botao-cabecalho"><b>Artistas</b></a>
+                <a href="#" class="botao-cabecalho"><b>livros</b></a>
+            </nav>
+            <div class="cabecalho2">
+                <a href="#" class="botao-encontre-uma-loja"><img src="img/location.svg" alt=""><b>Mais filmes</b></a>
+                <a href="http://127.0.0.1:5500/index.html" class="botao-entrar"><b>Sobre</b></a>
+                <a href="/login.html" class="botao-participe-agora"><b>Sair</b></a>
+            </div>
+        </header>
+            <div class="filmes">
+                    <img src="img/download.jpg" class="img-sabor">
+                    <img src="img/filmes_12272_13737-medio.jpg" class="img-sabor">
+                    <img src="img/vem brincar.jpg" class="img-sabor">
+                    <img src="img/filmes_16643_mindcage.jpg" class="img-sabor">
+                    <img src="img/a-luz-do-demonio-poster-nacional-1407.jpg" class="img-sabor">
+                    <img src="img/images (2).jpg" class="img-sabor">
+                    <img src="img/1101910_o-chamado-3-dvd-filme-terror-ms_m1_637383594408025475.jpg" class="img-sabor">
+                    <img src="img/images (4).jpg" class="img-sabor">
+                    <img src="img/a-luz-do-demonio-poster-nacional-1407.jpg" class="img-sabor">
+                    <img src="img/ouija.jpg" class="img-sabor">
+                    <img src="img/Exorcista do papa.jpg" class="img-sabor">
+                    <img src="img/a vo.webp" class="img-sabor">
+            </div>
+            <div class="filmes">
+                    <img src="img/orfa.jpg" class="img-sabor">
+                    <img src="img/images (5).jpg" class="img-sabor">
+                    <img src="img/download (3).jpg" class="img-sabor">
+                    <img src="img/a casa do medo.jpg" class="img-sabor">
+                    <img src="img/images (3).jpg" class="img-sabor">               
+                    <img src="img/sCoesZnspv1yuWuGdO0Re7e9AzR-1610x2415.webp" class="img-sabor">
+                    <img src="img/orfanato.jpg" class="img-sabor">
+                    <img src="img/X_2022.jpeg" class="img-sabor">
+                    <img src="img/charles.jpg" class="img-sabor">
+                    <img src="img/panico.jpg" class="img-sabor">
+                    <img src="img/Descida ao inferno.jpg" class="img-sabor">
+                    <img src="img/sorria.jpg" class="img-sabor">
+                    <img src="img/hereditario.jpg" class="img-sabor">
+                    <img src="img/our father.jpg" class="img-sabor">
+                    <img src="img/rogai por nós.jpg" class="img-sabor">
+                    <img src="img/convite maldito.jpg" class="img-sabor">
+                </div>
+            <div class="filmes">
+                    <img src="img/annabelle.jpg" class="img-sabor">
+                    <img src="img/it a coisa.jpg" class="img-sabor">
+                    <img src="img/mama.jpg" class="img-sabor">
+                    <img src="img/a bruxa.jpg" class="img-sabor">
+                    <img src="img/a vo.webp" class="img-sabor">               
+                    <img src="img/advogado do diabo.jpg" class="img-sabor">
+                    <img src="img/um lugar silencioso.webp" class="img-sabor">
+                    <img src="img/olhos famintos.webp" class="img-sabor">
+                    <img src="img/livrai nos do mal.jpg" class="img-sabor">
+                    <img src="img/na mente do demonio.jpg" class="img-sabor">
+                    <img src="img/capa-the-popes-exorcist.jpg" class="img-sabor">
+                    <img src="img/ritual.jpg" class="img-sabor">
+                    <img src="img/madrugada dos mortos.jpg" class="img-sabor">
+                    <img src="img/fuja.webp" class="img-sabor">
+                    <img src="img/terrifier.jpg" class="img-sabor">
+                    <img src="img/alma perdida.webp" class="img-sabor">
+             </div>
+    <script>
+        const slider = document.querySelectorAll('.filmes');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+
+
+        slider.forEach(Slid => {
+            Slid.addEventListener('mousedown', (e) => {
+                isDown = true;
+                Slid.classList.add('active');
+                startX = e.pageX - Slid.offsetLeft;
+                scrollLeft = Slid.scrollLeft;
+            });
+            Slid.addEventListener('mouseleave', () => {
+                isDown = false;
+                Slid.classList.remove('active');
+            });
+            Slid.addEventListener('mouseup', () => {
+                isDown = false;
+                Slid.classList.remove('active');
+            });
+            Slid.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - Slid.offsetLeft;
+                const walk = (x - startX) * 1;
+                Slid.scrollLeft = scrollLeft - walk;
+                console.log(walk);
+            });
+        }) 
+    </script>
+
+</body>
+
+</html>
