@@ -260,3 +260,15 @@ header{
     flex-wrap: wrap;
 }
 }
+.filmesnovos{
+    width: 179px;
+    height: 230px;
+    border-radius:15px;
+    margin: 20px;
+    box-shadow: 2px 2px 1px 1px rgb(30, 28, 28);
+}
+
+.filmes::-webkit-scrollbar{
+    display: none;
+    overflow: scroll;
+}
